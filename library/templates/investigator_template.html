@@ -1,0 +1,133 @@
+<div class='card'>
+    <div class='cardFrame'>
+        <div class='cardInfo'>
+            <!-- type of card -->
+            <h5 class=cardType>{{type}}</h5>
+            <!-- unique title -->
+            {{#unique}}
+                <h3 class=title>{{title}}*</h3>
+            {{/unique}} 
+            <!-- title -->
+            {{^unique}}
+                <h3 class=title>{{title}}</h3>
+            {{/unique}} 
+            <!-- subtitle -->
+            {{#subtitle}}
+                <h4>{{subtitle}}</h4>
+            {{/subtitle}}
+            <!-- stats -->
+            <p class=stats>
+            <!-- {{#skills}}
+                <b>Willpower: </b>{{skills.willpower}} - 
+                <b>Intellect: </b>{{skills.intellect}} - 
+                <b>Combat: </b>{{skills.combat}} - 
+                <b>Agility: </b>{{skills.agility}}
+            {{/skills}}
+            </p> -->
+            <p>
+            {{#skills}}
+             {{#willpower}}<b>Willpower: </b>{{willpower}}{{/willpower}}
+             {{#intellect}}<b>Intellect: </b>{{intellect}}{{/intellect}}
+             {{#combat}}<b>Combat: </b>{{combat}}{{/combat}}
+             {{#agility}}<b>Agility: </b>{{agility}}{{/agility}}
+            {{/skills}}
+            </p>
+            <!-- health and sanity-->
+            <p>
+                {{#health}} 
+                    <b>Health: </b> {{health}}
+                {{/health}}
+                {{#sanity}} 
+                    <b>Sanity: </b>{{sanity}}
+                {{/sanity}}
+            </p>
+            <!-- abilities -->
+            <p class=leftsided>
+            {{#abilities}}
+                <!-- keyword -->
+                {{#keyword}}
+                    {{keyword}}
+                {{/keyword}}
+                <!-- free -->
+                {{#free}}
+                    <b>Free: </b>{{free}}
+                {{/free}}
+                <!-- forced -->
+                {{#forced}}
+                    <b>Forced: </b>{{forced}}
+                {{/forced}}
+                <!-- revelation -->
+                {{#revelation}}
+                    <b>Revelation: </b>{{revelation}}
+                {{/revelation}}
+                <!-- reaction -->
+                {{#reaction}}
+                    <b>Reaction: </b>{{reaction}}
+                {{/reaction}}
+                <!-- action -->
+                {{#action}}
+                    <b>Action: </b>{{action}}
+                {{/action}}
+                <!-- environment -->
+                {{#environment}}
+                    <b>Environment: </b>{{environment}}
+                {{/environment}}
+                <!-- evade -->
+                {{#evade}}
+                    <b>Evade: </b>{{evade}}
+                {{/evade}}
+                {{#elder_sign}}
+                    <b>Elder Sign: </b>{{elder_sign}}
+                {{/elder_sign}}
+            {{/abilities}}
+             </p>
+             <!-- deck options -->
+            <p class=leftsided><b>Deck Build: </b>
+             {{#deck_options}}
+                {{#rogue}}
+                    <b>Rogue: </b>{{rogue}}
+                {{/rogue}}
+                {{#survivor}}
+                    <b>Survivor: </b>{{survivor}}
+                {{/survivor}}
+                {{#seeker}}
+                    <b>Seeker: </b>{{seeker}}
+                {{/seeker}}
+                {{#mystic}}
+                    <b>Mystic: </b>{{mystic}}
+                {{/mystic}}
+                {{#neutral}}
+                    <b>Neutral: </b>{{neutral}}
+                {{/neutral}}
+             {{/deck_options}}
+            </p>
+            <!-- deck requirements -->
+            <p class=leftsided><b>Deckbuilding Requirements (do not count towards deck size): </b>
+                {{#deck_requirements}}
+                    {{.}}. 
+                {{/deck_requirements}}
+            </p>
+            <!-- class -->
+            {{#class}}
+                <p class=leftsided>
+                    <b>Class: </b>{{class}}
+                </p>
+            {{/class}}
+            <!-- description -->
+            {{#description}}
+                <p class=quote>
+                    {{description}}
+                </p>
+            {{/description}}
+            <!-- description -->
+            {{#quote}}
+                <p class=quote>
+                    {{quote}}
+                </p>
+            {{/quote}}
+            <!-- id -->
+            <p class=leftsided><b>Number: </b>{{_id}}</p>
+
+        </div>
+    </div>
+</div>

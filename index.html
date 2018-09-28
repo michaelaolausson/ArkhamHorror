@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEST</title>
+        <meta charset="UTF-8">
+        <!-- // CSS // -->
+        <link rel="stylesheet" type="text/css" href="graphic_resources/css/background.css">
+        <link rel="stylesheet" type="text/css" href="graphic_resources/css/nav.css">
+        <link rel="stylesheet" type="text/css" href="graphic_resources/css/scrollbar.css">
+        <link rel="stylesheet" type="text/css" href="graphic_resources/css/card.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">-->
+        <!-- //  JavaScript  // -->
+        <!-- library -->
+        <script type="text/javascript" src="library/mustache/mustache.min.js"></script>
+        <script type="text/javascript" src="library/Events.js"></script>
+        <script type="text/javascript" src="library/ElementFactory.js"></script>
+        <!-- system -->
+        <script type="text/javascript" src="system/js/Main.js"></script> 
+    </head>
+    <body>
+    </body>
+            <header>
+                <h1 id="indexHeader" class=headerText></h1>
+                <div class="dropdown" id="sortDropdown">
+                    <span class="dropdownBtn" id="sortDropdownBtn" href="#">Sort by</span>
+                    <div class="dropdownContent" id="sortDropdownContent">
+                        <a class='dropdownLink' id='sortDropdownLink' value='title' href='#' options="title+asc">Title</a>   
+                        <a class='dropdownLink' id='sortDropdownLink' value='id' href='#' options="_id+asc">Card Number</a>
+                        <a class='dropdownLink' id='sortDropdownLink' value='unique' href='#' options="unique+desc">Unique</a> 
+                        <a class='dropdownLink' id='sortDropdownLink' value='cost' href='#' options="cost+desc">Cost</a> 
+                    </div>
+                </div>
+            </header>
+
+            <nav>
+                <div class="dropdown">
+                    <span class="dropdownBtn" href="#">Type</span>
+                    <div class="dropdownContent">
+                        <a class="dropdownLink" href="#">All Cards</a>
+                        <a class="dropdownLink" href="#" filter="type+act">Acts</a>
+                        <a class="dropdownLink" href="#" filter="type+agenda">Agendas</a>
+                        <a class="dropdownLink" href="#" filter="type+asset">Assets</a>
+                        <a class="dropdownLink" href="#" filter="type+enemy">Enemies</a>
+                        <a class="dropdownLink" href="#" filter="type+event">Events</a>
+                        <a class="dropdownLink" href="#" filter="type+investigator">Investigators</a>
+                        <a class="dropdownLink" href="#" filter="type+location">Locations</a>
+                        <a class="dropdownLink" href="#" filter="type+skill">Skills</a>
+                        <a class="dropdownLink" href="#" filter="type+treachery">Treacheries</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span class="dropdownBtn" href="#">Card Set</span>
+                    <div class="dropdownContent">
+                        <a class="dropdownLink" href="index.html">Core Set</a>
+                    </div>
+                </div>
+                 <div class="dropdown">
+                    <span class="dropdownBtn" href="#">Scenario</span>
+                    <div class="dropdownContent">
+                        <a class="dropdownLink" href="#" filter="The Gathering">The Gathering</a>
+                        <a class="dropdownLink" href="#" filter="The Midnight Masks">The Midnight Masks</a>
+                        <a class="dropdownLink" href="#" filter="The Devourer Below">The Devourer Below</a>
+                    </div>
+                </div>
+
+                    <h1>Arkham Horror - The Card Game</h1>
+
+                    <input id="searchbar" type="text" placeholder="search the database"></input>
+            </nav>
+    <div class="content" id="result"></div>
+
+    <div id="showMore">
+        <button id="backwardBtn" class="pageBtn" type="button">&larr;</button><span id="pageCount">1 / 10</span><button id="forwardBtn" class="pageBtn" type="button">&rarr;</button>
+    </div>
+</html>

@@ -1,0 +1,109 @@
+html body
+{
+    display: block;
+}
+
+html 
+{
+    font-family: 'Philosopher', sans-serif;     
+    background: url("../pics/bg.jpg");
+    color: #1d1d1d;
+}
+
+/* --- HEADER --- */
+header
+{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: rgba(72, 103, 72, 0.7);
+}
+#tentacles
+{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    
+}
+#tentacles2
+{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+}
+.headerText
+{
+    margin: 0 auto;
+    padding-top: 10px;
+    color: #aeb7ae;
+    font-size: 30px;
+    text-decoration: none;
+    width: 500px;
+}
+/* --- BORDER --- IMGS --- */
+.border
+{
+    height: 400px;
+    width: auto;
+    z-index: -10;
+}
+#borderTopleft
+{
+    position: fixed;
+    left: 20px;
+    top: 70px;
+}
+#borderTopRight
+{
+    position: fixed;
+    right: 20px;
+    top: 70px;
+}
+#borderBottomleft
+{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+#borderBottomRight
+{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+/* --- CONTENT --- DIV --- */
+.content
+{
+    position: relative;
+    margin-top: 120px;
+    margin-left: 20px;
+    max-width: 100%;
+    overflow: auto;
+    z-index: -10;
+}
+#result
+{
+   position: absolute;
+   top: 15%;
+   left: 15%; 
+   width: 80%;
+}
+#startText
+{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 300px;
+    text-align: center;
+    z-index: -10;
+}
+#startText p 
+{
+    margin-top: 18%;
+    font-size: 20px;
+}
+

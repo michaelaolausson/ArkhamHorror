@@ -1,0 +1,104 @@
+<div class='card'>
+    <div class='cardFrame'>
+        <div class='cardInfo'>
+            <!-- type of card -->
+            <h5 class=cardType>{{type}}</h5>
+            <!-- unique title -->
+            {{#unique}}
+                <h3 class=title>{{title}}*</h3>
+            {{/unique}} 
+            <!-- title -->
+            {{^unique}}
+                <h3 class=title>{{title}}</h3>
+            {{/unique}} 
+            <!-- subtitle -->
+            {{#subtitle}}
+                <h4 class=blurred>{{subtitle}}</h4>
+            {{/subtitle}}
+            <!-- health and horror damage -->
+            <p class=traits>
+                {{#traits}}
+                    <b>{{.}}</b> 
+                {{/traits}}          
+            </p>
+            <p class=quote>
+            {{#descriptions}}
+                {{#unrevealed}}
+                    {{unrevealed}}
+                {{/unrevealed}}
+            {{/descriptions}}
+            </p>
+            <!-- abilities -->
+            <p class=blurred>
+            {{#abilities}}
+                <!-- keyword -->
+                {{#keyword}}
+                    {{keyword}}
+                {{/keyword}}
+                <!-- free -->
+                {{#free}}
+                    <b>Free: </b>{{free}}
+                {{/free}}
+                <!-- forced -->
+                {{#forced}}
+                    <b>Forced: </b>{{forced}}
+                {{/forced}}
+                <!-- revelation -->
+                {{#revelation}}
+                    <b>Revelation: </b>{{revelation}}
+                {{/revelation}}
+                <!-- reaction -->
+                {{#reaction}}
+                    <b>Reaction: </b>{{reaction}}
+                {{/reaction}}
+                <!-- action -->
+                {{#action}}
+                    <b>Action: </b>{{action}}
+                {{/action}}
+                <!-- environment -->
+                {{#environment}}
+                    <b>Environment: </b>{{environment}}
+                {{/environment}}
+                <!-- evade -->
+                {{#evade}}
+                    <b>Evade: </b>{{evade}}
+                {{/evade}}
+                {{#elder_sign}}
+                    <b>Elder Sign: </b>{{elder_sign}}
+                {{/elder_sign}}
+            {{/abilities}}
+             </p>
+            <!-- clues -->
+            <p class=leftsided>
+                <b>Clues: </b></b><span class=blurred>{{shroud}}</span>
+            </p>
+            <!-- shroud -->
+            <p class=leftsided>
+                <b>Shroud: </b><span class=blurred>{{shroud}}</span>
+            </p>
+            <!-- victory -->
+            {{#victory}}
+                <p class=leftsided>
+                    <b>Victory Points: </b><span class=blurred>{{victory}}</span>
+                </p>
+            {{/victory}}
+            <!-- encounter_set -->
+            {{#encounter_set}}
+                <p class=leftsided>
+                    <b>Encounter Set: </b>{{encounter_set}}
+                </p>
+            {{/encounter_set}}
+            <!-- description -->
+            <p class=quote>
+            {{#descriptions}}
+                {{#revealed}}
+                    <span class=blurred>{{revealed}}</span>
+                {{/revealed}}
+            {{/descriptions}}
+            </p>
+            <!-- id -->
+            <p class=leftsided><b>Number: </b>{{_id}}</p>
+
+        </div>
+    </div>
+</div>

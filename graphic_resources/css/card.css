@@ -1,0 +1,135 @@
+.card
+{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 420px;
+    background-color: antiquewhite;
+    overflow: hidden;  
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px;
+    font-family: 'Philosopher', sans-serif; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+    z-index: 0;
+    font-style: normal;
+}
+.cardFrame
+{
+    background: url("../pics/frame/cardframe.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100%;
+    width: 100%;
+}
+.cardInfo
+{
+    padding: 20px;
+}
+.card p 
+{
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.2;
+}
+.card h3
+{
+    margin: 0;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+}
+.card h4
+{
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+}
+.card .blurredsubtitle
+{
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.card .blurredsubtitle:hover
+{
+    cursor: default;
+    color: #1d1d1d;;
+    text-shadow: none;
+}
+.card h5
+{
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+}
+.card p
+{
+    font-size: 12px;
+    text-align: left;
+}
+.card .stats 
+{
+    font-weight: bold;
+    text-align: center;
+}
+.card .attack
+{
+    text-align: center;
+}
+.card .traits
+{
+    text-align: center;
+}
+.card .blurred
+{
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.card .blurred:hover
+{
+    cursor: default;
+    color: #1d1d1d;;
+    text-shadow: none; 
+}
+.card .quote
+{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card .blurredquote
+{
+    color: transparent;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card .blurredquote:hover
+{
+    cursor: default;
+    color: #1d1d1d;;
+    text-shadow: none;
+}
+.card hr
+{
+    width: 80px;
+}
+.card .abilities
+{
+    font-size: 13px;
+    text-align: center;
+}
+.card .cardType 
+{
+    position: absolute;
+    top: 400px;
+    left: 40px;
+}
+.card .cost
+{
+    margin-bottom: 5px;
+}

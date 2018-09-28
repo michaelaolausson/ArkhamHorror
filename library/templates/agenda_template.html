@@ -1,0 +1,73 @@
+<div class='card'>
+    <div class='cardFrame'>
+        <div class='cardInfo'>
+            <!-- type of card -->
+            <h5 class=cardType>{{type}}</h5>
+            <!-- title -->
+            <h3 class=title>{{title}}</h3>
+            <!-- subtitle -->
+            <h4>{{name}}</h4>
+            <!-- abilities -->
+            <p class=blurred>
+            {{#abilities}}
+                <!-- keyword -->
+                {{#keyword}}
+                    {{keyword}}
+                {{/keyword}}
+                <!-- free -->
+                {{#free}}
+                    <b>Free: </b>{{free}}
+                {{/free}}
+                <!-- forced -->
+                {{#forced}}
+                    <b>Forced: </b>{{forced}}
+                {{/forced}}
+                <!-- revelation -->
+                {{#revelation}}
+                    <b>Revelation: </b>{{revelation}}
+                {{/revelation}}
+                <!-- reaction -->
+                {{#reaction}}
+                    <b>Reaction: </b>{{reaction}}
+                {{/reaction}}
+                <!-- action -->
+                {{#action}}
+                    <b>Action: </b>{{action}}
+                {{/action}}
+                <!-- environment -->
+                {{#environment}}
+                    <b>Environment: </b>{{environment}}
+                {{/environment}}
+                <!-- evade -->
+                {{#evade}}
+                    <b>Evade: </b>{{evade}}
+                {{/evade}}
+                {{#elder_sign}}
+                    <b>Elder Sign: </b>{{elder_sign}}
+                {{/elder_sign}}
+            {{/abilities}}
+             </p>
+             <!-- encounter_set -->
+            {{#doom}}
+                <p class=leftsided>
+                    <b>Doom: </b><span class=blurred>{{doom}}</span>
+                </p>
+            {{/doom}}
+            <!-- encounter_set -->
+            {{#encounter_set}}
+                <p class=leftsided>
+                    <b>Encounter Set: </b>{{encounter_set}}
+                </p>
+            {{/encounter_set}}
+            <!-- description -->
+            {{#description}}
+                <p class=blurredquote>
+                    {{description}}
+                </p>
+            {{/description}}
+            <!-- id -->
+            <p class=leftsided><b>Number: </b>{{_id}}</p>
+
+        </div>
+    </div>
+</div>
